@@ -1,0 +1,16 @@
+{
+    "shell_cmd": "python3 -u \"$file\"",
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python",
+    "variants":
+    [
+        {
+            "name": "Python 2",
+            "shell_cmd": "python -u \"$file\""
+        },
+		{
+            "name": "Python 3",
+            "shell_cmd": "python3 -u \"$file\""
+        }
+    ]
+}

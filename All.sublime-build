@@ -1,0 +1,26 @@
+{
+
+    "variants":
+    [
+        {
+            "name": "Python 2",
+            "shell_cmd": "python -u \"$file\""
+        },
+		{
+            "name": "Python 3",
+            "shell_cmd": "python3 -u \"$file\""
+        },
+        {
+        	"name": "PHP",
+        	"shell_cmd": "php \"$file\""
+        },
+        {
+        	"name": "NodeJS",
+        	"shell_cmd": "node \"$file\""
+        },
+        {
+            "name": "C++",
+            "shell_cmd": "g++ \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\""
+        }
+    ]
+}
